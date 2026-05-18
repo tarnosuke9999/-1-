@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界史 一問一答</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: #fff;
+            text-align: center;
+            padding: 25px 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+        .header p {
+            margin: 5px 0 0 0;
+            font-size: 13px;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 15px 80px 15px;
+        }
+        h2 {
+            font-size: 15px;
+            color: #2c3e50;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .quiz-card {
+            background: #fff;
+            padding: 16px;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+            border: 1px solid #eee;
+            transition: transform 0.2s;
+        }
+        .quiz-card:active {
+            transform: scale(0.99);
+        }
+        .q-num {
+            font-size: 12px;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        .question {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #2c3e50;
+        }
+        .btn-answer {
+            background-color: #f8f9fa;
+            color: #3498db;
+            border: 1px solid #3498db;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .btn-answer.active {
+            background-color: #3498db;
+            color: #fff;
+        }
+        .answer {
+            display: none;
+            margin-top: 12px;
+            padding: 12px;
+            background-color: #e8f8f5;
+            border-radius: 6px;
+            color: #117a65;
+            font-weight: bold;
+            font-size: 15px;
+            border-left: 4px solid #2ecc71;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>🌍 世界史 一問一答</h1>
+    <p>2026年度 一学期 中間テスト</p>
+</div>
+
+<div class="container">
+
+    <!-- 第1章 -->
+    <h2>第1章：人類の進化と文明の誕生</h2>
+    
+    <div class="quiz-card">
+        <div class="q-num">Q1</div>
+        <div class="question">人類をほかの動物から区別する最大の特長は何ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">直立二足歩行</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q2</div>
+        <div class="question">2001年にチャドで発見された、約700万年前の最古の人類（猿人）は何ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">サヘラントロプス（サヘラントロプス＝チャデンシス）</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q3</div>
+        <div class="question">約240万年前が現れ、火やハンドアックス（打製石器）を使用した人類の段階は何ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">原人（ホモ＝エレクトスなど）</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q4</div>
+        <div class="question">死者の埋葬を行い、剥片石器を使用したヨーロッパの旧人は何ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">ネアンデルタール人（旧人）</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q5</div>
+        <div class="question">現生人類（ホモ＝サピエンス）が描いた、ラスコーやアルタミラなどの絵画を何といいますか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">洞穴絵画</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q6</div>
+        <div class="question">約1万年前に氷期が終わって始まり、獲得経済から生産経済へ移行した変革を何といいますか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">農耕・牧畜（の開始）</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q7</div>
+        <div class="question">石斧や石臼など、表面を磨いて作られた石器を何といいますか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">磨製石器</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q8</div>
+        <div class="question">大河の流域で、定期的な増水を利用するために始まった高度な農法は何ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">灌漑農業</div>
+    </div>
+
+    <!-- 第2章 -->
+    <h2>第2章：古代メソポタミアと周辺民族</h2>
+
+    <div class="quiz-card">
+        <div class="q-num">Q9</div>
+        <div class="question">シリア・パレスチナからメソポタミアに広がる、農耕に適した地帯を何といいますか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">肥沃な三日月地帯</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q10</div>
+        <div class="question">都市国家ウル・ウルクなどを建設し、楔形文字や六十進法を生み出したのは何人ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">シュメール人</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q11</div>
+        <div class="question">シュメールの各都市に築かれた、神をまつるための巨大な聖塔を何といいますか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">ジッグラト</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q12</div>
+        <div class="question">前24世紀頃、シュメール人の都市国家を初めて統一したセム語系の人々は何ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">アッカド人</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q13</div>
+        <div class="question">バビロン第1王朝の王で、全メソポタミアを統一し「復讐法」に基づく法典を定めたのは誰ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">ハンムラビ王</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q14</div>
+        <div class="question">アナトリア高原に建国し、前17世紀頃に世界で初めて鉄器や2輪の戦車（チャリオット）を使用した人々は何ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">ヒッタイト人</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q15</div>
+        <div class="question">ヒッタイトの後にメソポタミアやシリアに勢力を伸ばした2つの民族を、栄えた順に答えなさい。</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">カッシート → ミタンニ</div>
+    </div>
+
+    <!-- 第3章 -->
+    <h2>第3章：古代エジプトの統一国家</h2>
+
+    <div class="quiz-card">
+        <div class="q-num">Q16</div>
+        <div class="question">「エジプトはナイルのたまもの」という言葉を残したギリシアの歴史家は誰ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">ヘロドトス</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q17</div>
+        <div class="question">古代エジプトの王を何と呼びますか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">ファラオ</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q18</div>
+        <div class="question">古王国時代の都と、そこで王権の象徴として築かれた建造物は何ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">都：メンフィス、建造物：ピラミッド</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q19</div>
+        <div class="question">中王国・新王国時代の都はどこですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">テーベ</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q20</div>
+        <div class="question">中王国末期にシリア方面から流入し、エジプトを一時支配した遊牧民は何ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">ヒクソス</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q21</div>
+        <div class="question">新王国時代にアテン神のみを信仰する宗教改革を行い、アマルナ美術を生んだ王は誰ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">アメンホテプ4世（アクエンアテン）</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q22</div>
+        <div class="question">エジプトの神聖文字を何といい、何という草で作られた紙に書かれましたか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">文字：ヒエログリフ、紙：パピルス</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q23</div>
+        <div class="question">ロゼッタ・ストーンを解読し、神聖文字の解読に成功したフランス人は誰ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">シャンポリオン</div>
+    </div>
+
+    <!-- 第4章 -->
+    <h2>第4章：東地中海世界の諸民族と統一帝国</h2>
+
+    <div class="quiz-card">
+        <div class="q-num">Q24</div>
+        <div class="question">ダマスカスを拠点に陸上の中継貿易で活躍した人々は何ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">アラム人</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q25</div>
+        <div class="question">シドン・ティルスを拠点に海上貿易を行い、アルファベットの起源となる文字を作ったのは何人ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">フェニキア人</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q26</div>
+        <div class="question">指導者モーセに率いられ、エジプトから脱出したヘブライ人の出来事を何といいますか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">出エジプト</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q27</div>
+        <div class="question">新バビロニアによってヘブライ人がバビロンに連れ去られた事件を何といいますか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">バビロン捕囚</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q28</div>
+        <div class="question">唯一の神ヤハウェを信仰し、自分たちだけが救われると考えるユダヤ教の思想を何といいますか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">選民思想</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q29</div>
+        <div class="question">クレタ島で栄え、クノッソスの宮殿や線文字Aを特徴とする文明は何ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">クレタ文明（エーゲ文明）</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q30</div>
+        <div class="question">シュリーマンの発掘で実在が証明され、戦闘的で線文字Bを使用したギリシア本土の文明は何ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">ミケーネ文明</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q31</div>
+        <div class="question">前7世紀に鉄製の武器や駅伝制を用いて、全オリエントを初めて統一した国家は何ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">アッシリア王国</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q32</div>
+        <div class="question">アッシリア崩壊後、オリエントを4分割した国家をすべて答えなさい。</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">エジプト、リディア、新バビロニア、メディア</div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="q-num">Q33</div>
+        <div class="question">ナイル川上流にあり、後にメロエに都を移して鉄器生産を行ったアフリカの王国は何ですか？</div>
+        <button class="btn-answer" onclick="toggleAnswer(this)">答えを見る</button>
+        <div class="answer">クシュ王国（メロエ王国）</div>
+    </div>
+
+</div>
+
+<script>
+    function toggleAnswer(button) {
+        var answerDiv = button.nextElementSibling;
+        if (answerDiv.style.display === "block") {
+            answerDiv.style.display = "none";
+            button.innerText = "答えを見る";
+            button.classList.remove("active");
+        } else {
+            answerDiv.style.display = "block";
+            button.innerText = "答えを隠す";
+            button.classList.add("active");
+        }
+    }
+</script>
+
+</body>
+</html>
